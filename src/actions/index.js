@@ -3,8 +3,8 @@ export const setFavorite = (payload) => ({
     payload,
 });
 
-export const delateFavorite = (payload) => ({
-    type: "FAVORITE_FAVORITE",
+export const deleteFavorite = (payload) => ({
+    type: "DELETE_FAVORITE",
     payload,
 });
 

@@ -5,21 +5,21 @@ const reducer = (state, action) => {
         ...state,
         favoriteCharacters: [...state.favoriteCharacters, action.payload],
       };
-        case "DELETE_FAVORITE":
-          return {
-            ...state,
-            favoriteCharacters: state.favoriteCharacters.filter(
-              (items) => items.data.id !== action.payload,
-              ),
-          };
-          case "SET_SECTION":
-            return {
-              ...state,
-              sectionActive: action.payload,
-            };
-            default:
-              return state;
-    };
+    case "DELETE_FAVORITE":
+      return {
+        ...state,
+        favoriteCharacters: state.favoriteCharacters.filter(
+          (items) => items.data.id !== action.payload,
+        ),
+      };
+    case "SET_SECTION":
+      return {
+        ...state,
+        sectionActive: action.payload,
+      };
+    default: 
+      return state;
+  }
 };
 
 export default reducer;

@@ -9,11 +9,11 @@ const App = () => (
   <BrowserRouter>
     <Layout>
       <Switch>
-        <Route exact path="/Favorites" component={Favorites} />
+        <Route exact path="/favorites" component={Favorites} />
         <Route exact path="/" component={Characters} />
       </Switch>
     </Layout>
   </BrowserRouter>
-)
+);
 
 export default App;
